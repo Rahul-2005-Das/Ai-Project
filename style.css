@@ -1,0 +1,123 @@
+/* ===== PAGE SETUP FOR PROJECT PRINT ===== */
+body {
+    font-family: "Times New Roman", serif;
+    background-color: white;
+    color: black;
+    margin: 40px;
+    line-height: 1.7;
+}
+
+/* ===== MAIN TITLE ===== */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: darkblue;
+    border-bottom: 3px solid darkblue;
+    display: inline-block;
+    padding-bottom: 5px;
+    font-size: 28px;
+}
+
+/* ===== NAVIGATION MENU ===== */
+nav {
+    text-align: center;
+    margin: 15px 0 25px 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #999;
+}
+
+nav a {
+    text-decoration: none;
+    color: darkgreen;
+    font-weight: bold;
+    margin: 0 12px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: darkred;
+}
+
+/* ===== SECTION HEADINGS ===== */
+h2 {
+    color: darkred;
+    margin-top: 25px;
+    border-left: 5px solid darkblue;
+    padding-left: 8px;
+}
+
+/* ===== PARAGRAPH TEXT ===== */
+p {
+    text-align: justify;
+    font-size: 16px;
+}
+
+/* ===== BULLET LIST ===== */
+ul {
+    font-size: 16px;
+    margin-left: 25px;
+}
+
+/* ===== SMALL CENTERED IMAGES ===== */
+  /* General page image style */
+
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: gray;
+    border-top: 1px solid #aaa;
+    padding-top: 8px;
+}
+
+/* ===== PAGE BORDER FOR PRINT LOOK ===== */
+body::before {
+    content: "";
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 2px solid #000;
+    pointer-events: none;
+}
+/* General style for centering */
+.page-image {
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+/* Home page image size */
+.home-image {
+    width: 500px;   /* set width */
+    height: 200px;  /* set height */
+    object-fit: cover; /* keep image proportion nicely */
+}
+
+/* History page image size */
+.history-image {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Objectives page image size */
+.objectives-image {
+    width: 500px;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Future page image size */
+.future-image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
